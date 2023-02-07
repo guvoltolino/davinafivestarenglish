@@ -1,0 +1,1377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateY(5px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* HEADER */
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(14, 72, 139);
+    padding: 12px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    animation: fade-in .6s;
+}
+
+.logo h2{
+    margin-left: 2px;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.logo img{
+    border-radius: 16px;
+    height: 40px;
+}
+
+.nav-list ul{
+    list-style: none;
+    display: flex;
+    margin: 0 10px;
+    animation: fade-in .6s;
+}
+
+.nav-list li{
+    margin: 5px;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .9);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.nav-link:hover{
+    color: #fff;
+    background-color: rgba(235, 29, 35, .9);
+    border-radius: 5px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+    
+.mobile-menu {
+    display: none;
+}
+
+/* SEÇÃO */
+
+section{
+    width: 80%;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+section h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 5px;
+    margin: 5px;
+}
+
+section p{
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+}
+
+hr{
+    border:.5px solid rgb(14, 72, 139);
+}
+
+/* PARTE INICIAL */
+
+#inicio{
+    background-image: url('img/background-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -170px;
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: darken;
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex; 
+}
+
+.inicio-texto{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.inicio-texto h1{
+    padding: 10px;
+    margin: 8px;
+    font-weight: 800;
+    text-shadow: 1px 1px .2px #eb1d23;
+    text-transform: uppercase;
+    animation: fade-in .6s .1s backwards;
+}
+
+.inicio-texto p{ 
+    width: 90%;  
+    padding: 5px;
+    margin-bottom: 15px;
+    animation: fade-in .6s .1s backwards;
+}
+
+.inicio-texto a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgba(235, 30, 37, .9);
+    border: 2.5px solid rgba(14, 72, 139, .1);
+    border-radius: 35px;
+    padding: 10px;
+    margin: 10px;
+    transition: all .5s;
+    animation: fade-in .6s .1s backwards;
+}
+
+.inicio-texto a:hover{
+    background-color: rgba(0, 0, 0, .2);
+    border: 2.5px solid #0e488b;
+}
+
+/* SEÇÃO ESCOLA */
+
+.escola{
+    height: 48vh;
+    text-align: justify;
+}
+
+.escola h2{
+    color:rgb(14, 72, 139);
+    text-align: left;
+}
+
+.escola p{
+    padding: 5px;
+    margin: 5px;
+}
+
+#col-1{
+    width: 60%;
+    float: left;
+}
+
+#col-2{
+    width: 40%;
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+.div-col{
+    height: 60vh;
+}
+
+.div-col img{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.div-col a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(235, 30, 37, .9);
+    color: rgb(255, 255, 255);
+    border-radius: 35px;
+    border: 2px solid rgba(14, 72, 139, .1);
+    padding: 10px;
+    margin-left: 8px;
+    transition: all .5s;
+}
+
+.div-col a:hover{
+    background-color: white ;
+    border: 2px solid rgb(14, 72, 139);
+    color: rgb(235, 30, 37);
+}
+
+/* PARTE CURSOS */
+
+.cursos h2{
+    color: #da1a21;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card{
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+    width: 350px;
+    border-radius: 25px;
+    box-shadow: 1px -1px 1px 1px rgba(14, 72, 139, .5);
+    background-color: rgb(14, 72, 139);
+}
+
+.card h3{
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 2px;
+    margin: 5px;
+}
+
+.card p{
+    text-align: justify;
+    padding: 8px;
+    margin: 5px;
+}
+
+.cursos-texto a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 8px;
+    padding: 5px;
+    border-radius: 35px;
+    border: 2px solid rgba(14, 72, 139, .1);
+    color: #fff;
+    font-weight: bold;
+    background-color: #eb1d23;
+    transition: all .5s;
+}
+
+.cursos-texto a:hover{
+    background-color: white ;
+    border: 2px solid rgb(14, 72, 139);
+    color: rgb(235, 30, 37);
+}
+
+/* PARTE TEACHERS */
+
+
+#col-t-1{
+    width: 50%; 
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#col-t-2{
+    width: 50%;
+    float: right;
+}
+
+.col-teachers{
+    height: 45vh;
+    
+}
+
+.teachers h2{
+    color: rgb(14, 72, 139);
+    text-align: center;
+    margin: 8px 8px 0 8px;
+}
+
+.col-teachers img{
+    width: 100%;
+    padding: 5px;
+    margin: 8px;
+}
+
+.col-teachers p{
+    padding: 10px;
+    text-align: justify;
+}
+
+/* PARTE METODOLOGIA */
+
+.metodologia p{
+    text-align: justify;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.metodologia h2{
+    color: #da1a21;
+    text-align: center;
+}
+
+/* PARTE FALE CONOSCO */
+
+section#contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-cont{
+    color: white;
+    width: 600px;
+    background-color: rgb(14, 72, 139);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 45px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.div-cont form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input{
+    font-size: 15px;
+    padding: 15px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+form input:focus{
+    border: 2px solid rgb(235, 30, 37);
+    border-radius: 5px;
+}
+
+form textarea{
+    resize: none;
+    font-size: 15px;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: all .5s;
+    border: 0;
+}
+
+form textarea:focus{
+    border: 2px solid rgb(235, 30, 37);
+    border-radius: 5px;
+}
+
+form button{
+    text-transform: uppercase;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: #f74c52;
+    border: 1px solid rgb(11, 56, 107);
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+form button:hover{
+    background-color: rgba(255, 255, 255, .5);
+    border: 1px solid rgba(218, 26, 33, .5);
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: rgb(5, 29, 56);
+}
+
+.footer-top{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.footer-top img{
+    margin-right: 8px;
+    width: 25px;
+    height: auto;
+}
+
+.footer-top h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.social ul{
+    list-style: none;
+    display: flex;  
+    margin: 5px;  
+}
+
+.social i{
+    font-size: 18px;
+    color: white;
+    margin: 8px;
+}
+
+.footer-bottom{
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* REPONSIVIDADE CELULAR */
+
+@media screen and (max-width: 425px){
+    p{
+        font-size: 16px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* NAV */
+
+    .nav-bar img{
+        width: 25px;
+        height: auto;
+        margin: 5px;
+    }
+
+    .nav-bar h2{
+        font-size: 16px;
+        margin: 2px;
+        padding: 0;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        background-color: rgb(14, 72, 139);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .mobile-menu li{
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    .mobile-menu li:hover{
+        background-color: rgba(255, 255, 255, .2);    
+    }
+
+    .mobile-menu a:hover{
+        background: transparent;
+        color: #fff;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 10px;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+
+    /* INICIO */
+
+    #inicio{
+        background-position: center;
+        height:90vh;
+        width: 100%;
+    }
+
+    .inicio-texto{
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    .inicio-texto h1{
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    .inicio-texto p{ 
+        text-align: justify;
+        font-size: 16px;
+        padding: 5px;
+        margin-bottom: 10px;
+       
+    }
+
+    .inicio-texto a{
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+      
+    }
+
+    /* PARTE ESCOLA */
+
+    .escola{
+        height: auto;
+        margin: 10px auto;
+      
+    }
+
+    .escola h2{
+        text-align: center;
+    }
+    
+
+    #col-1, #col-2{
+        float: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    #col-1{
+        margin-bottom: 10px;
+    }
+
+    #col-2{
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .div-col{
+        height: auto;
+        
+    }
+    
+    .div-col img{
+        display: block;
+    }
+    
+    .div-col a{
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* PARTE CURSOS */
+
+    .cursos{
+        margin: 10px auto;
+    }    
+
+    .cursos h2{
+        margin-top: 15px;
+    }
+
+    .card-group{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .card{
+        align-items: center;
+        padding: 5px;
+        margin: 10px;
+        height: auto;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .card h3{
+        font-size: 18px;
+    }
+
+
+    .cursos-texto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cursos-texto p{
+        text-align: justify;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .cursos-texto a{
+        margin: 0;
+        padding: 5px;
+    }
+
+    /* PARTE TEACHERS */
+
+    .teachers{
+        margin: 10px auto 5px auto;
+    }
+
+    #col-t-1, #col-t-2{
+        width: 100%;
+        float: none;
+    }
+
+    .col-teachers{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-teachers h2{
+        text-align: center;
+    }
+
+    /* PARTE METODOLOGIA */
+
+    .metodologia{
+        margin: 10px auto;
+    }
+
+    /* PARTE FALE CONOSCO */
+
+    .div-cont{
+        width: 90%;
+        padding: 15px 30px;
+    }
+
+    .div-cont h2{
+        font-size: 17px;
+    }
+
+    .div-cont form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form label{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    form input{
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+    form textarea{
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+
+    form button{
+        padding: 10px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-top{
+        margin: 5px;
+    }
+
+    .footer-top img{
+        margin-right: 5px;
+        width: 20px;
+    }
+
+    .footer-top h3{
+        font-size: 14px;
+    }
+
+    .social ul{
+        flex-direction: row; 
+    }
+
+    .social i{
+        font-size: 16px;
+    }
+
+    .footer-bottom p{
+        margin: 5px;
+        font-size: 14px;
+    }
+}
+
+/* RESPOSIVIDADE TABLET */
+
+@media screen and (max-width: 1025px){
+
+    p{
+        font-size: 16px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* NAV */
+
+    .nav-bar img{
+        width: 25px;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .nav-bar h2{
+        font-size: 16px;
+        margin: 2px;
+        padding: 0;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        background-color: rgb(14, 72, 139);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .mobile-menu li{
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    .mobile-menu li:hover{
+        background-color: rgba(255, 255, 255, .2);    
+    }
+
+    .mobile-menu a:hover{
+        background: transparent;
+        color: #fff;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 10px;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+
+    /* INICIO */
+
+    #inicio{
+        background-position: center;
+        height:90vh;
+        width: 100%;
+    }
+
+    .inicio-texto{
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    .inicio-texto h1{
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    .inicio-texto p{ 
+        text-align: justify;
+        font-size: 16px;
+        padding: 5px;
+        margin-bottom: 10px;
+       
+    }
+
+    .inicio-texto a{
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+      
+    }
+
+    /* PARTE ESCOLA */
+
+    .escola{
+        height: auto;
+        margin: 10px auto;
+      
+    }
+
+    .escola h2{
+        text-align: center;
+    }
+    
+
+    #col-1, #col-2{
+        float: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    #col-1{
+        margin-bottom: 10px;
+    }
+
+    #col-2{
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .div-col{
+        height: auto;
+    }
+    
+    .div-col img{
+        display: block;
+    }
+
+    .div-col a{
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* PARTE CURSOS */
+
+    .cursos{
+        margin: 10px auto;
+    }    
+
+    .cursos h2{
+        margin-top: 15px;
+    }
+
+    .card-group{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .card{
+        align-items: center;
+        padding: 5px;
+        margin: 10px;
+        height: auto;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .card h3{
+        font-size: 18px;
+    }
+
+
+    .cursos-texto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cursos-texto p{
+        text-align: justify;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .cursos-texto a{
+        margin: 0;
+        padding: 5px;
+    }
+
+    /* PARTE TEACHERS */
+
+    .teachers{
+        margin: 10px auto 5px auto;
+    }
+
+    #col-t-1, #col-t-2{
+        width: 100%;
+        float: none;
+    }
+
+    .col-teachers{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-teachers h2{
+        text-align: center;
+    }
+
+    /* PARTE METODOLOGIA */
+
+    .metodologia{
+        margin: 10px auto;
+    }
+
+    /* PARTE FALE CONOSCO */
+
+    .div-cont{
+        width: 90%;
+        padding: 15px 30px;
+    }
+
+    .div-cont form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form label{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    form input{
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+    form textarea{
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+
+    form button{
+        padding: 10px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-top{
+        margin: 5px;
+    }
+
+    .footer-top img{
+        margin-right: 5px;
+        width: 20px;
+    }
+
+    .footer-top h3{
+        font-size: 14px;
+    }
+
+    .social ul{
+        flex-direction: row; 
+    }
+
+    .social i{
+        font-size: 16px;
+    }
+
+    .footer-bottom p{
+        margin: 5px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    p{
+        font-size: 16px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* NAV */
+
+    .nav-bar img{
+        width: 25px;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .nav-bar h2{
+        font-size: 16px;
+        margin: 2px;
+        padding: 0;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        background-color: rgb(14, 72, 139);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .mobile-menu li{
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    .mobile-menu li:hover{
+        background-color: rgba(255, 255, 255, .2);    
+    }
+
+    .mobile-menu a:hover{
+        background: transparent;
+        color: #fff;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 10px;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+
+    /* INICIO */
+
+    #inicio{
+        background-position: center;
+        height:90vh;
+        width: 100%;
+    }
+
+    .inicio-texto{
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    .inicio-texto h1{
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    .inicio-texto p{ 
+        text-align: justify;
+        font-size: 16px;
+        padding: 5px;
+        margin-bottom: 10px;
+       
+    }
+
+    .inicio-texto a{
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+      
+    }
+
+    /* PARTE ESCOLA */
+
+    .escola{
+        height: auto;
+        margin: 10px auto;
+      
+    }
+
+    .escola h2{
+        text-align: center;
+    }
+    
+
+    #col-1, #col-2{
+        float: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    #col-1{
+        margin-bottom: 10px;
+    }
+
+    #col-2{
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .div-col{
+        height: auto;
+    }
+    
+    .div-col img{
+        display: block;
+    }
+    
+    .div-col a{
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* PARTE CURSOS */
+
+    .cursos{
+        margin: 10px auto;
+    }    
+
+    .cursos h2{
+        margin-top: 15px;
+    }
+
+    .card-group{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .card{
+        align-items: center;
+        padding: 5px;
+        margin: 10px;
+        height: auto;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .card h3{
+        font-size: 18px;
+    }
+
+    .cursos-texto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cursos-texto p{
+        text-align: justify;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .cursos-texto a{
+        margin: 0;
+        padding: 5px;
+    }
+
+    /* PARTE TEACHERS */
+
+    .teachers{
+        margin: 10px auto 5px auto;
+    }
+
+    #col-t-1, #col-t-2{
+        width: 100%;
+        float: none;
+    }
+
+    .col-teachers{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-teachers h2{
+        text-align: center;
+    }
+
+    /* PARTE METODOLOGIA */
+
+    .metodologia{
+        margin: 10px auto;
+    }
+
+    /* PARTE FALE CONOSCO */
+
+    .div-cont{
+        width: 90%;
+        padding: 15px 30px;
+    }
+
+    .div-cont form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form label{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    form input{
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+    form textarea{
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+
+    form button{
+        padding: 10px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-top{
+        margin: 5px;
+    }
+
+    .footer-top img{
+        margin-right: 5px;
+        width: 20px;
+    }
+
+    .footer-top h3{
+        font-size: 14px;
+    }
+
+    .social ul{
+        flex-direction: row; 
+    }
+
+    .social i{
+        font-size: 16px;
+    }
+
+    .footer-bottom p{
+        margin: 5px;
+        font-size: 14px;
+    }
+
+}

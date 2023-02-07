@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="assets/img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+
+        /* ANIMAÇÃO */
+
+        @keyframes fade-in{
+            0%{
+                opacity: 0;
+                transform: translateY(5px)
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body{
+            background-color: white;
+            overflow: hidden;
+        }
+
+
+        h1{
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 10px;
+            padding: 5px;
+            animation: fade-in .6s;
+        }
+
+
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .thanks{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(235, 30, 37, .9);
+            color: white;
+            width: 450px;
+            height: 450px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            padding: 15px;
+            margin: 15px auto;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .thanks p{
+            margin: 15px auto;
+            padding: 10px;
+            animation: fade-in .6s;
+        }
+
+        .thanks a{
+            color: rgba(255, 255, 255, .8);
+            text-transform: uppercase;
+            text-decoration: none;
+            margin: 15px;
+            padding: 10px;
+            background-color: rgb(11, 38, 72);
+            border-radius: 5px;
+            transition: all .5s;
+            animation: fade-in .6s;
+        }
+
+        .thanks a:hover{
+            color: #fff;
+            background:rgb(10, 56, 109);
+            
+        }
+
+        
+
+        @media screen and (max-width: 728px){
+            
+            .thanks{
+            width: 345px;
+            height: 345px;
+            margin: 20px auto;
+            }
+        }
+
+    </style>
+
+    <title>Davina Five-Star English</title>
+</head>
+<body>
+    
+
+        <main>
+            <div class="thanks">
+                <h1>Agradecemos pelo contato</h1>
+                <p>Em breve entraremos em contato. :)</p>
+                <a href="https://davinafivestarenglish.guuhvoltolino.repl.co/index.html">Voltar ao inicio</a>
+            </div>
+        </main>
+
+
+    
+</footer>
+
+<script src="assets/script.js"></script>
+
+</body>
+</html>
