@@ -784,7 +784,7 @@ footer{
 
     h2{
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /* NAV */
@@ -941,6 +941,7 @@ footer{
 
     .cursos{
         margin: 10px auto;
+        width: 85%;
     }    
 
     .cursos h2{
