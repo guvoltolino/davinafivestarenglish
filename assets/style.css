@@ -667,12 +667,13 @@ footer{
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin: 5px 10px;
+        padding: 0 8px;
     }
 
     .cursos-texto p{
         text-align: justify;
         padding: 5px;
-        margin: 5px;
     }
 
     .cursos-texto a{
